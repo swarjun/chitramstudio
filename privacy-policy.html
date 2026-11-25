@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <!--
-  Chitram Studio — Privacy Policy
-  Host: docs/privacy-policy.html → https://swarjun.github.io/chitramstudio/privacy-policy.html
-  Paste that URL into App Store Connect (App Privacy → Privacy Policy URL) and Google Play (Store listing → Privacy Policy).
+  Chitram Studio (Android) — Privacy Policy
+  Rewritten 2026-11-25 from the January 2026 blog post
+  (chitramstudio.blogspot.com/2026/01/privacy-policy-for-chitram-studio-last.html),
+  corrected to match the app as built: no AdMob, no Firebase Analytics/Crashlytics.
+  Use this URL in Google Play Console → App content → Privacy policy once hosted.
 -->
 <html lang="en">
 <head>
@@ -41,106 +43,124 @@
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Chitram Studio icon" />
+    <img src="https://swarjun.github.io/chitramstudio/logo.png" alt="Chitram Studio icon" />
     <h1>Privacy Policy</h1>
-    <p>Last updated: 28 September 2026</p>
+    <p>Last updated: 25 November 2026</p>
   </header>
 
   <div class="wrap">
     <main>
       <p>
-        This Privacy Policy explains how <strong>Chitram Studio</strong> (the &ldquo;App&rdquo;,
-        &ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) handles your information. Chitram
-        Studio is a media toolbox — PDF tools, document scanner, photo editor, slideshow/video maker,
-        file compressor, image-to-PDF and internet radio — developed and operated by
-        <strong>Swarjun Tech</strong>. By using the App, you agree to the practices described here.
+        Chitram Studio (&ldquo;we&rdquo;, &ldquo;our&rdquo;, &ldquo;us&rdquo;) is developed and operated by
+        <strong>Swarjun Tech</strong>. This Privacy Policy explains how we handle information when you use
+        the Chitram Studio apps for Android (<code>com.chitramstudio.toolbox</code>) and Windows.
         Your use is also subject to our <a href="terms-of-service.html">Terms of Service</a>.
       </p>
       <div class="callout">
-        <strong>In short:</strong> Chitram Studio has no account and no login. Your documents,
-        photos and videos are processed <strong>on your device</strong>, and the files you create are
-        saved to your own Documents folder. We do not collect, upload, sell or share your content.
+        <strong>In short:</strong> Chitram Studio has no account, no advertising and no analytics.
+        Your documents, photos, videos and recordings are processed <strong>on your device</strong> and stay
+        there. We do not collect, upload, sell or share your files.
       </div>
 
       <h2>1. Information We Collect</h2>
-      <h3>a) Content you choose to open or create</h3>
+      <h3>Files you open or create</h3>
       <p>
-        When you pick a file, scan a document, or edit a photo/video, the App reads that content
-        <strong>only to perform the task you requested</strong> and writes the result back to your
-        device. This content stays on your device; it is not sent to us.
+        When you open, scan, edit, convert, compress or record something, the app reads that content
+        <strong>only to perform the task you asked for</strong> and saves the result on your device.
+        It is never sent to us.
       </p>
-      <h3>b) Information we do <em>not</em> collect</h3>
+      <h3>Camera</h3>
+      <p>
+        Used to capture photos and scan documents into PDFs. Images are processed on your device; we do
+        not collect or store camera data.
+      </p>
+      <h3>Microphone and screen capture (Android)</h3>
+      <p>
+        Used only by the Screen Recorder, after you start a recording and approve Android's screen-capture
+        prompt. Recordings are saved to your device and are not uploaded.
+      </p>
+      <h3>Storage</h3>
+      <p>
+        With your permission (&ldquo;All files access&rdquo; on Android), the app reads and saves documents,
+        images, videos, audio and PDFs so you can browse and work on them. All files stay on your device.
+      </p>
+      <h3>Crash reports</h3>
+      <p>
+        If the Android app crashes, it may offer to open your email app with a crash report addressed to
+        <a href="mailto:crash.chitramstudio@gmail.com">crash.chitramstudio@gmail.com</a>. Nothing is sent
+        unless you choose to send that email. The report contains technical details (app version, device
+        model, Android version and the error) and no files.
+      </p>
+      <h3>Information we do <em>not</em> collect</h3>
       <ul>
-        <li>No account, name, email or password (there is no sign-up).</li>
-        <li>No location data.</li>
-        <li>No contacts.</li>
-        <li>No advertising profile of you built by us.</li>
+        <li>No account, name, email or password &mdash; there is no sign-up.</li>
+        <li>No location, contacts or call history.</li>
+        <li>No advertising identifier and no advertising or analytics profile.</li>
       </ul>
 
       <h2>2. Permissions We Request</h2>
       <table>
         <tr><th>Permission</th><th>Why we use it</th></tr>
-        <tr><td>Camera</td><td>Only for the Document Scanner, to capture pages. Images are processed on your device.</td></tr>
-        <tr><td>Photos / Files</td><td>To let you pick the images, videos, audio or PDFs you want to work on, and to save your results.</td></tr>
-        <tr><td>Internet</td><td>Used by Online Radio to stream stations and load the public station directory, and to check for app updates.</td></tr>
+        <tr><td>All files access / storage</td><td>Browse, open, edit and save your documents, photos, videos and audio.</td></tr>
+        <tr><td>Camera</td><td>Document scanner and photo capture.</td></tr>
+        <tr><td>Microphone</td><td>Recording your voice with the Screen Recorder.</td></tr>
+        <tr><td>Screen capture</td><td>Screen Recorder, only after you approve the system prompt.</td></tr>
+        <tr><td>Display over other apps</td><td>Floating Screen Recorder controls.</td></tr>
+        <tr><td>Notifications</td><td>Playback, recording and processing status.</td></tr>
+        <tr><td>Internet</td><td>Streaming online radio and checking for app updates.</td></tr>
       </table>
       <p class="muted">
-        You can grant or revoke these permissions at any time in your device settings. The rest of the
-        App keeps working without them; only the related feature is affected.
+        You can grant or revoke permissions at any time in your device settings. Only the related feature
+        stops working.
       </p>
 
-      <h2>3. Where Your Data Is Stored</h2>
+      <h2>3. How We Use Information</h2>
+      <ul>
+        <li>To provide the features you use, on your device.</li>
+        <li>To fix bugs, using crash reports you choose to email us.</li>
+        <li>To answer messages you send to our support address.</li>
+      </ul>
+
+      <h2>4. Data Security</h2>
       <p>
-        The files you create are stored in your device's <strong>Documents</strong> folder (in a
-        sub-folder per tool). Small preferences — such as your chosen theme, home layout, radio
-        favorites and playlists — are stored locally on your device. This data is not transmitted to us.
+        Your files remain on your device and are protected by its own security (screen lock, encryption).
+        We do not store, upload or share your files or documents, and we do not sell, trade or rent user
+        data to anyone. Settings such as theme, radio favorites and playlists are stored locally on your device.
       </p>
 
-      <h2>4. Online Radio &amp; Third-Party Content</h2>
-      <p>
-        The Online Radio feature plays live audio streams over the internet and lists stations from the
-        public <strong>Radio-Browser</strong> directory (<a href="https://www.radio-browser.info">radio-browser.info</a>).
-        When you play a station, your device connects directly to that station's stream and to the
-        Radio-Browser service; their handling of any connection data is governed by their own policies.
-        We do not receive your listening history.
-      </p>
-
-      <h2>5. Analytics &amp; Advertising</h2>
-      <p>
-        Chitram Studio does not include our own analytics or advertising SDKs, and we do not build an
-        advertising profile of you. App distribution platforms (Apple App Store, Google Play) may
-        collect standard aggregate install and crash statistics under their own policies.
+      <h2>5. Third-Party Services</h2>
+      <table>
+        <tr><th>Service</th><th>What it does</th></tr>
+        <tr><td><a href="https://www.radio-browser.info">Radio Browser</a> and radio stations</td><td>Online Radio loads station listings from the public Radio Browser directory and streams audio directly from each station. Those services see your IP address under their own policies. We do not receive your listening history.</td></tr>
+        <tr><td>Google Play in-app updates</td><td>Checks whether a newer version is available (Android). Governed by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</td></tr>
+        <tr><td>Google ML Kit (on-device)</td><td>Document edge detection and Snap Sort photo grouping (Android). Models run on your device; your photos are not sent to Google for this.</td></tr>
+      </table>
+      <p class="muted">
+        Chitram Studio does not use Google AdMob, Firebase Analytics or Firebase Crashlytics. App stores may
+        collect standard install and crash statistics under their own policies.
       </p>
 
       <h2>6. Children's Privacy</h2>
       <p>
-        The App is a general-purpose utility and is not directed at children under 13. We do not
+        Our apps are general-purpose utilities and are not directed at children under 13. We do not
         knowingly collect personal information from children.
       </p>
 
-      <h2>7. Data Security</h2>
+      <h2>7. Changes to This Privacy Policy</h2>
       <p>
-        Because your content is processed and stored on your own device, it is protected by your
-        device's own security (lock screen, encryption). Please keep your device and operating system
-        up to date.
-      </p>
-
-      <h2>8. Changes to This Policy</h2>
-      <p>
-        We may update this policy from time to time. Material changes will be reflected here with a new
+        We may update this policy from time to time. Changes will be posted on this page with a new
         &ldquo;Last updated&rdquo; date.
       </p>
 
-      <h2>9. Contact Us</h2>
+      <h2>8. Contact Us</h2>
       <p>
         Questions about this policy? Email
         <a href="mailto:care.chitramstudio@gmail.com">care.chitramstudio@gmail.com</a>.
       </p>
 
       <div class="links">
-        <a href="support.html">Support</a>
         <a href="terms-of-service.html">Terms of Service</a>
-        <a href="index.html">Home</a>
+        <a href="chitram-studio.html">Home</a>
       </div>
 
       <footer>&copy; 2026 Chitram Studio &middot; Swarjun Tech. All rights reserved.</footer>
