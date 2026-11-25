@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <!--
-  Chitram Studio (Android) — Privacy Policy
-  Rewritten 2026-11-25 from the January 2026 blog post
+  Chitram Studio — Privacy Policy (covers the Android and Windows apps)
+
+  CANONICAL SOURCE: this file, in the Kotlin/Android project
+    ChitramStudioNew/docs/privacy-policy.html
+  Edit it here first, then copy it to the hosting repo.
+
+  HOSTED AT (GitHub Pages, repo swarjun/chitramstudio):
+    https://swarjun.github.io/chitramstudio/privacy-policy.html
+  That URL is the one entered in Google Play Console. Do not edit the copies in
+  swarjun/chitramstudio or in the Flutter project (chitram-studio-windows/docs) directly.
+
+  History: rewritten 2026-11-25 from the January 2026 blog post
   (chitramstudio.blogspot.com/2026/01/privacy-policy-for-chitram-studio-last.html),
-  corrected to match the app as built: no AdMob, no Firebase Analytics/Crashlytics.
-  Use this URL in Google Play Console → App content → Privacy policy once hosted.
+  2026-11-25: deliberately discloses Firebase Analytics, Crashlytics and AdMob as "may use", so the
+  page stays valid if they are enabled later. As of this date neither app includes them. The Play Data
+  safety form must still match what the shipped build actually collects.
 -->
 <html lang="en">
 <head>
@@ -43,7 +54,7 @@
 </head>
 <body>
   <header>
-    <img src="https://swarjun.github.io/chitramstudio/logo.png" alt="Chitram Studio icon" />
+    <img src="logo.png" alt="Chitram Studio icon" />
     <h1>Privacy Policy</h1>
     <p>Last updated: 25 November 2026</p>
   </header>
@@ -57,9 +68,10 @@
         Your use is also subject to our <a href="terms-of-service.html">Terms of Service</a>.
       </p>
       <div class="callout">
-        <strong>In short:</strong> Chitram Studio has no account, no advertising and no analytics.
-        Your documents, photos, videos and recordings are processed <strong>on your device</strong> and stay
-        there. We do not collect, upload, sell or share your files.
+        <strong>In short:</strong> Chitram Studio has no account or login. Your documents, photos, videos
+        and recordings are processed <strong>on your device</strong> and stay there &mdash; we never collect,
+        upload, sell or share your files. To keep the apps free and stable, we may use Google services that
+        collect limited usage, crash and advertising data, as described below.
       </div>
 
       <h2>1. Information We Collect</h2>
@@ -84,18 +96,34 @@
         With your permission (&ldquo;All files access&rdquo; on Android), the app reads and saves documents,
         images, videos, audio and PDFs so you can browse and work on them. All files stay on your device.
       </p>
-      <h3>Crash reports</h3>
+      <h3>Analytics and crash data</h3>
       <p>
-        If the Android app crashes, it may offer to open your email app with a crash report addressed to
+        We may use third-party services such as <strong>Firebase Analytics</strong> and
+        <strong>Firebase Crashlytics</strong> to understand how the apps are used and to fix crashes. These
+        services may collect anonymous usage statistics (features opened, session length), crash and
+        diagnostic reports (app version, device model, operating system version, the error), and device
+        identifiers such as an app-instance ID. They do not receive your files, and we do not use this data
+        to identify you.
+      </p>
+      <p>
+        If the Android app crashes, it may also offer to open your email app with a crash report addressed to
         <a href="mailto:crash.chitramstudio@gmail.com">crash.chitramstudio@gmail.com</a>. Nothing is sent
-        unless you choose to send that email. The report contains technical details (app version, device
-        model, Android version and the error) and no files.
+        unless you choose to send that email.
+      </p>
+      <h3>Advertising</h3>
+      <p>
+        The apps may show ads through <strong>Google AdMob</strong>. AdMob may collect your device&rsquo;s
+        advertising identifier, IP address and device information to show ads, limit repeats and measure
+        performance, and may show personalized ads where the law allows and you have consented. You can reset
+        your advertising ID or opt out of personalized ads in your device settings (Android: Settings &rarr;
+        Google &rarr; Ads). Learn more at
+        <a href="https://policies.google.com/technologies/ads">How Google uses information from sites or apps that use its services</a>.
       </p>
       <h3>Information we do <em>not</em> collect</h3>
       <ul>
         <li>No account, name, email or password &mdash; there is no sign-up.</li>
-        <li>No location, contacts or call history.</li>
-        <li>No advertising identifier and no advertising or analytics profile.</li>
+        <li>No precise location, contacts or call history.</li>
+        <li>No contents of your files, photos, videos, recordings or documents.</li>
       </ul>
 
       <h2>2. Permissions We Request</h2>
@@ -107,7 +135,8 @@
         <tr><td>Screen capture</td><td>Screen Recorder, only after you approve the system prompt.</td></tr>
         <tr><td>Display over other apps</td><td>Floating Screen Recorder controls.</td></tr>
         <tr><td>Notifications</td><td>Playback, recording and processing status.</td></tr>
-        <tr><td>Internet</td><td>Streaming online radio and checking for app updates.</td></tr>
+        <tr><td>Internet</td><td>Streaming online radio, checking for app updates, and (where enabled) analytics, crash reporting and ads.</td></tr>
+        <tr><td>Advertising ID (Android)</td><td>Used by Google AdMob, where ads are shown, to serve and measure ads.</td></tr>
       </table>
       <p class="muted">
         You can grant or revoke permissions at any time in your device settings. Only the related feature
@@ -117,7 +146,9 @@
       <h2>3. How We Use Information</h2>
       <ul>
         <li>To provide the features you use, on your device.</li>
-        <li>To fix bugs, using crash reports you choose to email us.</li>
+        <li>To improve performance and stability, and to fix bugs and crashes.</li>
+        <li>To understand which features are used, so we can improve them.</li>
+        <li>To display ads that keep the apps free.</li>
         <li>To answer messages you send to our support address.</li>
       </ul>
 
@@ -125,7 +156,7 @@
       <p>
         Your files remain on your device and are protected by its own security (screen lock, encryption).
         We do not store, upload or share your files or documents, and we do not sell, trade or rent user
-        data to anyone. Settings such as theme, radio favorites and playlists are stored locally on your device.
+        data to anyone. Data collected by the third-party services above is sent over encrypted connections. Settings such as theme, radio favorites and playlists are stored locally on your device.
       </p>
 
       <h2>5. Third-Party Services</h2>
@@ -134,10 +165,14 @@
         <tr><td><a href="https://www.radio-browser.info">Radio Browser</a> and radio stations</td><td>Online Radio loads station listings from the public Radio Browser directory and streams audio directly from each station. Those services see your IP address under their own policies. We do not receive your listening history.</td></tr>
         <tr><td>Google Play in-app updates</td><td>Checks whether a newer version is available (Android). Governed by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</td></tr>
         <tr><td>Google ML Kit (on-device)</td><td>Document edge detection and Snap Sort photo grouping (Android). Models run on your device; your photos are not sent to Google for this.</td></tr>
+        <tr><td>Google Play Services</td><td>Supports updates, ML Kit and other Google services on Android.</td></tr>
+        <tr><td>Google AdMob</td><td>Shows ads where enabled; may collect the advertising ID and device information. <a href="https://policies.google.com/technologies/ads">Google ads policy</a>.</td></tr>
+        <tr><td>Firebase Analytics</td><td>Anonymous usage statistics. <a href="https://firebase.google.com/support/privacy">Firebase privacy</a>.</td></tr>
+        <tr><td>Firebase Crashlytics</td><td>Crash and diagnostic reports. <a href="https://firebase.google.com/support/privacy">Firebase privacy</a>.</td></tr>
       </table>
       <p class="muted">
-        Chitram Studio does not use Google AdMob, Firebase Analytics or Firebase Crashlytics. App stores may
-        collect standard install and crash statistics under their own policies.
+        These providers process data under their own privacy policies. App stores may also collect standard
+        install and crash statistics.
       </p>
 
       <h2>6. Children's Privacy</h2>
@@ -160,7 +195,8 @@
 
       <div class="links">
         <a href="terms-of-service.html">Terms of Service</a>
-        <a href="chitram-studio.html">Home</a>
+        <a href="support.html">Support</a>
+        <a href="index.html">Home</a>
       </div>
 
       <footer>&copy; 2026 Chitram Studio &middot; Swarjun Tech. All rights reserved.</footer>
