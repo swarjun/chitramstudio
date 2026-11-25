@@ -1,4 +1,22 @@
 <!doctype html>
+<!--
+  Chitram Studio — "Get the app" smart link (sends Android visitors to Google Play and
+  iPhone/iPad visitors to the App Store, and shows both buttons on desktop)
+
+  CANONICAL SOURCE: this file, in the Kotlin/Android project
+    ChitramStudioNew/docs/chitram-studio.html
+  Edit it here first, then copy it to the hosting repo. There is ONE copy, not one per app:
+  neither app bundles this page; both only link to the hosted URL below.
+
+  HOSTED AT (GitHub Pages, repo swarjun/chitramstudio):
+    https://swarjun.github.io/chitramstudio/chitram-studio.html
+
+  DO NOT RENAME OR MOVE THIS PAGE. Its URL is printed as the "Chitram Studio" footer link in
+  PDFs already shared by users, and is hard-coded in both apps:
+    Android: app/src/main/java/com/chitramstudio/pdftools/PdfPageArranger.kt (DOWNLOAD_URL)
+    Flutter (iOS/Windows): chitram-studio-windows/lib/features/pdf_tools/services/pdf_operations.dart
+  Store links live in the script below (PLAY_STORE, APP_STORE).
+-->
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -9,7 +27,7 @@
   <!-- Link preview (WhatsApp, etc.). Add an og:image once a hosted banner
        exists for a richer card; text-only preview works fine without it. -->
   <meta property="og:title" content="Chitram Studio — by Swarjun Tech" />
-  <meta property="og:description" content="Download Chitram Studio for Android." />
+  <meta property="og:description" content="Download Chitram Studio for Android and iPhone." />
   <meta property="og:type" content="website" />
 
   <style>
@@ -56,10 +74,9 @@
   </main>
 
   <script>
-    // Fill APP_STORE in once the iOS listing is live, e.g.
-    // 'https://apps.apple.com/app/chitram-studio/id0000000000'
+    // Region-neutral App Store URL (no /in/), so each visitor lands on their own country's store.
     var PLAY_STORE = 'https://play.google.com/store/apps/details?id=com.chitramstudio.toolbox';
-    var APP_STORE  = '';
+    var APP_STORE  = 'https://apps.apple.com/app/chitram-studio-media-tools/id6814724630';
 
     var ua = navigator.userAgent || navigator.vendor || '';
     var isAndroid = /android/i.test(ua);
